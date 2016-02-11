@@ -3,10 +3,9 @@ class profile_test::domain_membership {
     ip => '10.20.2.10',
   } ->
 
-  class{'domain_membership':
+  class{'::domain_membership':
     domain       => 'lab.local',
     username     => 'vagrant',
     password     => 'vagrant',
-    join_options => '3',
   }
 }
